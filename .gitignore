@@ -1,0 +1,14 @@
+*~
+*.pyc
+.sbt.delmont31/
+.sbt.subs1/
+.sbt.subs2/
+.sbt.tully31/
+delmont-genome-sigs.tar.gz
+delmont-genome-sigs/
+delmont31.sbt.json
+subs1.sbt.json
+subs2.sbt.json
+tully-genome-sigs.tar.gz
+tully-genome-sigs/
+tully31.sbt.json
