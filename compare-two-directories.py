@@ -8,9 +8,13 @@ import sourmash_lib
 from sourmash_lib.sbt import SBT, GraphFactory
 from sourmash_lib.sbtmh import (SigLeaf, search_minhashes,
                                 SearchMinHashesFindBest)
+from pickle import load, dump
 
 
 def traverse_find_sigs(dirnames):
+    """
+    Find all the filenames ending with .sig under given directories.
+    """
     for dirname in dirnames:
         for root, dirs, files in os.walk(dirname):
             for name in files:
@@ -19,7 +23,51 @@ def traverse_find_sigs(dirnames):
                     yield fullname
 
 
+def load_all_signatures(dirname, ksize):
+    """
+    Load all signatures under given dirname with given ksize, return
+    dictionary d[name] -> signature.
+
+    Because this can be slow for many hundreds of signatures, cache dict
+    using pickle.
+    """
+    sigd = {}
+    filename_d = {}
+
+    pickle_cache = dirname.rstrip('/') + '.pickle'
+    if os.path.exists(pickle_cache):
+        print('loading from cache:', pickle_cache)
+        with open(pickle_cache, 'rb') as fp:
+            filename_d, sigd = load(fp)
+
+    loaded_new = False
+
+    n = 0
+    for filename in traverse_find_sigs([dirname]):
+        if filename not in filename_d:
+            loaded_new = True
+            sig = sourmash_lib.signature.load_one_signature(filename,
+                                                            select_ksize=ksize)
+            filename_d[filename] = 1
+            sigd[sig.name()] = sig
+
+        n += 1
+
+    if loaded_new:
+        print('saving to cache:', pickle_cache)
+        with open(pickle_cache, 'wb') as fp:
+            dump((filename_d, sigd), fp)
+
+    return sigd
+
+
 def make_all_matches(sigdict, tree, threshold):
+    """
+    Find all the matches between a dictionary of signatures and an
+    SBT (search tree), at or above given threshold.
+
+    Return a dictionary of d[signame] -> (match_name, similarity)
+    """
     match_d = {}
     search_fn = lambda: SearchMinHashesFindBest().search
 
@@ -40,20 +88,21 @@ def make_all_matches(sigdict, tree, threshold):
     return match_d
 
 
-def load_all_signatures(dirname, ksize):
-    sigd = {}
+def containment(matches, query_sigdict, match_sigdict):
+    """
+    Compute containment in query for its match.
 
-    n = 0
-    for filename in traverse_find_sigs([dirname]):
-        sig = sourmash_lib.signature.load_one_signature(filename,
-                                                        select_ksize=ksize)
-        sigd[sig.name()] = sig
+    Returns dict d[query_name] -> containment.
+    """
+    contained = dict()
+    for query_name, (match_name, similarity) in matches.items():
+        query = query_sigdict[query_name]
+        match = match_sigdict[match_name]
 
-        n += 1
-        if n > 20:
-            break
+        cont = query.contained_by(match)
+        contained[query_name] = cont
 
-    return sigd
+    return contained
 
 
 def main():
@@ -80,18 +129,94 @@ def main():
     matches_1_in_2 = make_all_matches(sigdict1, tree2, THRESHOLD)
     matches_2_in_1 = make_all_matches(sigdict2, tree1, THRESHOLD)
 
-    # now, do containment, too.
-    contained_1_in_2 = {}
-    for query_name, (match_name, similarity) in matches_1_in_2.items():
-        if query_name not in sigdict1 or match_name not in sigdict2:
-            # during testing with subsets, this may be true
-            continue
+    # now, do containment
+    contained_1_in_2 = containment(matches_1_in_2, sigdict1, sigdict2)
+    contained_2_in_1 = containment(matches_2_in_1, sigdict2, sigdict1)
 
-        query = sigdict1[query_name]
-        match = sigdict2[match_name]
+    # summary stats
+    CONTAIN_THRESHOLD=0.95
+    IDENT_THRESHOLD=0.80
+    
+    print('thresholds:')
+    print('min Jaccard similarity for any match:', THRESHOLD)
+    print('to score as identical, similarity must be >=', IDENT_THRESHOLD)
+    print('to score as contained, containment must be >=', CONTAIN_THRESHOLD)
 
-        print('got one!')
+    # 1 in 2
+    c_ident = 0
+    c_match = 0
+    c_contain = 0
+    c_no_match = 0
+    c_no_contain = 0
+    for query_name in sigdict1:
+        best_match = None
+        similarity = 0.0
+        cont = 0.0
         
+        if query_name in matches_1_in_2:
+            (best_match, similarity) = matches_1_in_2[query_name]
+        if query_name in contained_1_in_2:
+            cont = contained_1_in_2[query_name]
+
+        if not best_match:
+            c_no_match += 1
+        else:
+            c_match += 1
+            
+        if cont < CONTAIN_THRESHOLD:
+            c_no_contain += 1
+        else:
+            c_contain += 1
+
+        if similarity > IDENT_THRESHOLD:
+            c_ident += 1
+
+    print('----')
+    print('{} vs {}: {} signatures'.format(args.dir1, args.dir2, len(sigdict1)))
+    print('identical count:', c_ident)
+    print('containment count:', c_contain)
+    print('matches:', c_match)
+    
+    print('no match:', c_no_match)
+    print('no contain:', c_no_contain)
+
+    # 2 in 1
+    c_ident = 0
+    c_match = 0
+    c_contain = 0
+    c_no_match = 0
+    c_no_contain = 0
+    for query_name in sigdict2:
+        best_match = None
+        similarity = 0.0
+        cont = 0.0
+        
+        if query_name in matches_2_in_1:
+            (best_match, similarity) = matches_2_in_1[query_name]
+        if query_name in contained_2_in_1:
+            cont = contained_2_in_1[query_name]
+
+        if not best_match:
+            c_no_match += 1
+        else:
+            c_match += 1
+            
+        if cont < CONTAIN_THRESHOLD:
+            c_no_contain += 1
+        else:
+            c_contain += 1
+
+        if similarity > IDENT_THRESHOLD:
+            c_ident += 1
+
+    print('----')
+    print('{} vs {}: {} signatures'.format(args.dir2, args.dir1, len(sigdict2)))
+    print('identical count:', c_ident)
+    print('containment count:', c_contain)
+
+    print('matches:', c_match)
+    print('no match:', c_no_match)
+    print('no contain:', c_no_contain)
 
                     
 if __name__ == '__main__':
