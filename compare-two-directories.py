@@ -148,6 +148,8 @@ def main():
     c_contain = 0
     c_no_match = 0
     c_no_contain = 0
+    identical_names = []
+    
     for query_name in sigdict1:
         best_match = None
         similarity = 0.0
@@ -169,6 +171,7 @@ def main():
             c_contain += 1
 
         if similarity > IDENT_THRESHOLD:
+            identical_names.append((query_name, best_match))
             c_ident += 1
 
     print('----')
@@ -179,6 +182,10 @@ def main():
     
     print('no match:', c_no_match)
     print('no contain:', c_no_contain)
+    
+    print('identical:')
+    for (k, v) in identical_names:
+        print("{} = {}".format(k, v))
 
     # 2 in 1
     c_ident = 0
@@ -186,6 +193,8 @@ def main():
     c_contain = 0
     c_no_match = 0
     c_no_contain = 0
+    identical_names = []
+
     for query_name in sigdict2:
         best_match = None
         similarity = 0.0
@@ -207,6 +216,7 @@ def main():
             c_contain += 1
 
         if similarity > IDENT_THRESHOLD:
+            identical_names.append((query_name, best_match))
             c_ident += 1
 
     print('----')
@@ -217,6 +227,10 @@ def main():
     print('matches:', c_match)
     print('no match:', c_no_match)
     print('no contain:', c_no_contain)
+
+    print('identical:')
+    for (k, v) in identical_names:
+        print("{} = {}".format(k, v))
 
                     
 if __name__ == '__main__':
