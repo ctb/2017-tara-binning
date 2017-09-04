@@ -6,11 +6,10 @@ import sys
 from pickle import load, dump
 import sourmash_lib.signature
 
-sys.path.insert(0, '../sourmash/lca/')
 import lca_json                      # from github.com/ctb/2017-sourmash-lca
 
 LCA_DBs = ['db/delmont.lca.json', 'db/tully.lca.json',
-           '../sourmash/genbank/genbank.lca.json']
+           'db/genbank.lca.json']
 #LCA_DBs = ['db/tully.lca.json']
 SCALED=10000
 THRESHOLD=5                               # how many counts of a taxid at min
