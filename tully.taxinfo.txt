@@ -10,345 +10,85 @@ loading k-mer DB from: ../sourmash/genbank/genbank/genbank-k31.lca.gz
 loading all signatures: tully-genome-sigs
 loading from cache: tully-genome-sigs.pickle
 ...loaded 2631 signatures at k=31
-TOBG_MED-638 has multiple LCA at rank 'phylum': Proteobacteria, Bacteroidetes
-TOBG_RS-344 has multiple LCA at rank 'species': Synechococcus sp. CC9605, Synechococcus sp. REDSEA-S01_B1
-TOBG_NAT-90 has multiple LCA at rank 'class': Flavobacteriia, Gammaproteobacteria
-TOBG_SP-291 has multiple LCA at rank 'species': Pseudomonas xanthomarina, Pseudomonas stutzeri
-TOBG_NP-970 has multiple LCA at rank 'order': Rhodobacterales, Rickettsiales
-TOBG_ARS-5 has multiple LCA at rank 'family': Oceanospirillaceae, Rhodobacteraceae
-TOBG_EAC-112 has multiple LCA at rank 'species': Rhodobacteraceae bacterium REDSEA-S34_B6, alpha proteobacterium SCGC AAA298-K06
-TOBG_SAT-111 has multiple LCA at rank 'species': Halomonas sp. QHL1, Halomonas sp. KO116, Halomonas boliviensis
-TOBG_SP-4366 has multiple LCA at rank 'class': Planctomycetia, Phycisphaerae
-TOBG_RS-665 has multiple LCA at rank 'phylum': Proteobacteria, Chloroflexi
-TOBG_SP-133 has multiple LCA at rank 'species': Pseudomonas balearica, Pseudomonas stutzeri
-TOBG_EAC-50 has multiple LCA at rank 'species': Prorocentrum minimum, Marinobacter excellens, Marinobacter hydrocarbonoclasticus, Marinobacter sp. LQ44
-TOBG_EAC-48 has multiple LCA at rank 'genus': Marinobacter, Roseovarius
-TOBG_EAC-713 has multiple LCA at rank 'species': Marinobacter sp. CP1, Marinobacter manganoxydans, Marinobacter adhaerens
-TOBG_NP-34 has multiple LCA at rank 'species': Sphingomonas melonis, Sphingobium yanoikuyae, Sphingobium sp. TCM1, Sphingomonas sp. SKA58
-TOBG_NAT-171 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
-TOBG_SP-244 has multiple LCA at rank 'family': Rhodobacteraceae, Wenzhouxiangellaceae
-TOBG_SP-261 has multiple LCA at rank 'species': Marinimicrobia bacterium TCS55, Candidatus Marinimicrobia bacterium REDSEA-S15_B13
-TOBG_CPC-315 has multiple LCA at rank 'family': Oceanospirillaceae, Rhodobacteraceae
-TOBG_CPC-325 has multiple LCA at rank 'class': Alphaproteobacteria, Gammaproteobacteria
-TOBG_SAT-17 has multiple LCA at rank 'class': Verrucomicrobiae, Gammaproteobacteria
-TOBG_SP-120 has multiple LCA at rank 'species': Ruegeria mobilis, Pseudomonas pachastrellae
-TOBG_CPC-314 has multiple LCA at rank 'species': Pseudoalteromonas sp. PAB 2.2, Pseudoalteromonas lipolytica
-TOBG_ARS-77 has multiple LCA at rank 'species': SAR116 cluster bacterium REDSEA-S02_B12, SAR116 cluster bacterium REDSEA-S10_B10N8
-TOBG_MED-831 has multiple LCA at rank 'species': Synechococcus sp. WH 7803, Synechococcus sp. WH 7805
-TOBG_CPC-15 has multiple LCA at rank 'species': Pseudoalteromonas sp. XI10, Pseudoalteromonas shioyasakiensis
-TOBG_SAT-117 has multiple LCA at rank 'phylum': Balneolaeota, Bacteroidetes
-TOBG_SAT-2823 has multiple LCA at rank 'class': Cytophagia, Gammaproteobacteria
-TOBG_NP-45 has multiple LCA at rank 'species': Marinobacter sp. CP1, Marinobacter manganoxydans
-TOBG_SP-131 has multiple LCA at rank 'species': Thalassospira profundimaris, Thalassospira sp. HJ
+TOBG_SAT-5 has multiple LCA at rank 'species': Aurantimonas coralicida, Aurantimonas manganoxydans
 TOBG_ARS-38 has multiple LCA at rank 'species': Herbaspirillum huttiense, Herbaspirillum sp. B39
-TOBG_IN-44 has multiple LCA at rank 'species': Rhodobacteraceae bacterium REDSEA-S34_B6, alpha proteobacterium SCGC AAA298-K06
-TOBG_NP-982 has multiple LCA at rank 'phylum': Proteobacteria, Acidobacteria, Chloroflexi
-TOBG_NAT-278 has multiple LCA at rank 'genus': Nitrospina, Candidatus Nitrosopelagicus
-TOBG_CPC-80 has multiple LCA at rank 'species': Idiomarina loihiensis, Idiomarina sp. 28-8
-TOBG_SAT-1383 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_CPC-302 has multiple LCA at rank 'species': Novosphingobium naphthalenivorans, Novosphingobium malaysiense
-TOBG_MED-646 has multiple LCA at rank 'family': Alteromonadaceae, Halieaceae
-TOBG_CPC-78 has multiple LCA at rank 'genus': Oceanicaulis, Maricaulis
-TOBG_SAT-34 has multiple LCA at rank 'family': Porticoccaceae, Cryomorphaceae
-TOBG_SP-312 has multiple LCA at rank 'family': Alteromonadaceae, Spongiibacteraceae
-TOBG_SP-132 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_NP-44 has multiple LCA at rank 'species': Idiomarina sp. T82-3, Idiomarina baltica
-TOBG_MED-697 has multiple LCA at rank 'genus': Marinobacter, Rhodopirellula
-TOBG_ARS-58 has multiple LCA at rank 'species': Marine group II euryarchaeote REDSEA-S10_B2, Marine group II euryarchaeote REDSEA-S11_B3N4
-TOBG_MED-633 has multiple LCA at rank 'species': Sulfitobacter pontiacus, Sulfitobacter sp. NAS-14.1
-TOBG_NAT-10 has multiple LCA at rank 'family': Aurantimonadaceae, Rhizobiaceae
-TOBG_EAC-62 has multiple LCA at rank 'phylum': Balneolaeota, Bacteroidetes
-TOBG_NAT-70 has multiple LCA at rank 'family': Planctomycetaceae, Synechococcaceae
-TOBG_SP-118 has multiple LCA at rank 'species': Stappia sp. ES.058, Stappia stellulata
-TOBG_SAT-28 has multiple LCA at rank 'species': Thalassospira xiamenensis, Thalassospira lucentensis
-TOBG_MED-845 has multiple LCA at rank 'phylum': Bacteroidetes, Cyanobacteria
-TOBG_IN-15 has multiple LCA at rank 'species': Marinobacter sp. tcs-11, Marinobacter hydrocarbonoclasticus
-TOBG_SP-3030 has multiple LCA at rank 'genus': Zunongwangia, Mesonia
-TOBG_SP-221 has multiple LCA at rank 'family': Alteromonadaceae, Halieaceae
-TOBG_CPC-28 has multiple LCA at rank 'species': Ruegeria mobilis, Pseudomonas pachastrellae
-TOBG_SP-3069 has multiple LCA at rank 'class': Alphaproteobacteria, Gammaproteobacteria
-TOBG_ARS-115 has multiple LCA at rank 'species': Idiomarina sp. T82-3, Idiomarina baltica
-TOBG_EAC-29 has multiple LCA at rank 'class': Deltaproteobacteria, Opitutae
-TOBG_ARS-62 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_EAC-42 has multiple LCA at rank 'phylum': Proteobacteria, Chloroflexi
-TOBG_SAT-3034 has multiple LCA at rank 'class': Flavobacteriia, Saprospiria
-TOBG_EAC-1995 has multiple LCA at rank 'class': Alphaproteobacteria, Gammaproteobacteria
-TOBG_ARS-1015 has multiple LCA at rank 'family': Alteromonadaceae, Erythrobacteraceae
-TOBG_RS-342 has multiple LCA at rank 'species': Oleibacter sp. HI0075, Oleibacter marinus
-TOBG_NP-32 has multiple LCA at rank 'genus': Marinobacter, Marinobacterium
-TOBG_NAT-248 has multiple LCA at rank 'family': Moraxellaceae, Flavobacteriaceae
-TOBG_MED-740 has multiple LCA at rank 'phylum': Crenarchaeota, Thaumarchaeota
-TOBG_NP-35 has multiple LCA at rank 'family': Oceanospirillaceae, Alcanivoracaceae
-TOBG_SP-17 has multiple LCA at rank 'family': Rhodobacteraceae, Phyllobacteriaceae
-TOBG_EAC-43 has multiple LCA at rank 'class': Flavobacteriia, Saprospiria
-TOBG_SP-238 has multiple LCA at rank 'family': Alteromonadaceae, Halieaceae
-TOBG_MED-732 has multiple LCA at rank 'phylum': Balneolaeota, Bacteroidetes, Verrucomicrobia
-TOBG_SAT-2755 has multiple LCA at rank 'family': Rhodospirillaceae, Flavobacteriaceae
-TOBG_SP-26 has multiple LCA at rank 'genus': Sulfitobacter, Magnetovibrio
-TOBG_NP-16 has multiple LCA at rank 'species': Candidatus Magnetoovum chiemensis, Limnobacter sp. MED105, Limnobacter sp. CACIAM 66H1
-TOBG_SAT-148 has multiple LCA at rank 'order': Oceanospirillales, Alteromonadales
-TOBG_SP-216 has multiple LCA at rank 'class': Opitutae, Gammaproteobacteria
-TOBG_MED-657 has multiple LCA at rank 'class': Alphaproteobacteria, Flavobacteriia
-TOBG_IN-20 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_EAC-97 has multiple LCA at rank 'genus': Erythrobacter, Alcanivorax
-TOBG_NP-101 has multiple LCA at rank 'order': Rickettsiales, Pelagibacterales
-TOBG_CPC-36 has multiple LCA at rank 'species': Ruegeria mobilis, Pseudomonas pachastrellae
-TOBG_NAT-27 has multiple LCA at rank 'phylum': Euryarchaeota, Actinobacteria
-TOBG_SP-259 has multiple LCA at rank 'species': Idiomarina sp. T82-3, Idiomarina baltica
-TOBG_IN-47 has multiple LCA at rank 'family': Planctomycetaceae, Acidiferrobacteraceae
-TOBG_NP-980 has multiple LCA at rank 'class': Actinobacteria, Gammaproteobacteria
-TOBG_NAT-109 has multiple LCA at rank 'class': Balneolia, Gammaproteobacteria
-TOBG_NP-949 has multiple LCA at rank 'class': Opitutae, Gammaproteobacteria
-TOBG_IN-10 has multiple LCA at rank 'phylum': Balneolaeota, Bacteroidetes
-TOBG_SP-292 has multiple LCA at rank 'phylum': Balneolaeota, Bacteroidetes
-TOBG_MED-594 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
-TOBG_NP-990 has multiple LCA at rank 'phylum': Proteobacteria, Verrucomicrobia
-TOBG_SAT-85 has multiple LCA at rank 'species': Candidatus Magnetoovum chiemensis, Limnobacter sp. MED105, Limnobacter sp. CACIAM 66H1
-TOBG_NAT-20 has multiple LCA at rank 'family': Rhodobacteraceae, Phyllobacteriaceae
-TOBG_IN-23 has multiple LCA at rank 'family': Alteromonadaceae, Flavobacteriaceae
-TOBG_NAT-252 has multiple LCA at rank 'class': Flavobacteriia, Gammaproteobacteria
-TOBG_MED-195 has multiple LCA at rank 'species': Synechococcus sp. CC9311, Synechococcus sp. WH 8020
-TOBG_NP-125 has multiple LCA at rank 'species': Marinobacter sp. tcs-11, Alcanivorax sp. Nap_24, Spongiibacter tropicus
-TOBG_EAC-45 has multiple LCA at rank 'species': Leeuwenhoekiella blandensis, Leeuwenhoekiella palythoae
-TOBG_NP-120 has multiple LCA at rank 'family': Leptospiraceae, Spirochaetaceae
-TOBG_SAT-130 has multiple LCA at rank 'genus': Flavobacterium, Chryseobacterium
-TOBG_EAC-73 has multiple LCA at rank 'species': Salinicola socius, Gammaproteobacteria bacterium MFB021
-TOBG_EAC-653 has multiple LCA at rank 'species': SAR116 cluster bacterium REDSEA-S02_B12, SAR116 cluster bacterium REDSEA-S10_B10N8
-TOBG_EAC-2090 has multiple LCA at rank 'phylum': Acidobacteria, Chloroflexi
-TOBG_RS-447 has multiple LCA at rank 'phylum': Actinobacteria, Acidobacteria
-TOBG_NAT-167 has multiple LCA at rank 'species': Citreicella thiooxidans, Microbacteriaceae bacterium, Citreicella sp. SE45
-TOBG_NAT-173 has multiple LCA at rank 'genus': Fulvimarina, Aurantimonas
-TOBG_RS-392 has multiple LCA at rank 'species': Marine group II euryarchaeote REDSEA-S25_B4N5, Marine group II euryarchaeote REDSEA-S19_B7N8
-TOBG_NAT-241 has multiple LCA at rank 'class': Alphaproteobacteria, Gammaproteobacteria
-TOBG_EAC-51 has multiple LCA at rank 'family': Alteromonadaceae, Flavobacteriaceae
-TOBG_CPC-86 has multiple LCA at rank 'class': Planctomycetia, Phycisphaerae
-TOBG_IN-928 has multiple LCA at rank 'species': Alcanivorax sp. CP2C, Alcanivorax sp. Nap_24
-TOBG_ARS-112 has multiple LCA at rank 'species': Candidatus Magnetoovum chiemensis, Limnobacter sp. MED105, Limnobacter sp. CACIAM 66H1
-TOBG_RS-818 has multiple LCA at rank 'phylum': Verrucomicrobia, Chloroflexi
-TOBG_SP-153 has multiple LCA at rank 'species': Paraglaciecola mesophila, Pseudoalteromonas sp. PLSV
-TOBG_NP-28 has multiple LCA at rank 'species': Acinetobacter venetianus, Acinetobacter haemolyticus
-TOBG_MED-825 has multiple LCA at rank 'family': Alteromonadaceae, Halieaceae
-TOBG_EAC-67 has multiple LCA at rank 'genus': Sphingobium, Paracoccus
-TOBG_CPC-75 has multiple LCA at rank 'family': Alteromonadaceae, Halieaceae
-TOBG_SP-45 has multiple LCA at rank 'species': Leeuwenhoekiella blandensis, Leeuwenhoekiella palythoae
-TOBG_MED-719 has multiple LCA at rank 'species': Verrucomicrobia bacterium SCGC AAA164-E04, Verrucomicrobia bacterium SCGC AAA164-N20
-TOBG_ARS-1036 has multiple LCA at rank 'species': Erythrobacter sp. HI00D59, Erythrobacter sp. EhN03
-TOBG_SAT-21 has multiple LCA at rank 'species': Hyphomonas sp. L-53-1-40, Hyphomonas atlantica
-TOBG_NAT-158 has multiple LCA at rank 'class': Alphaproteobacteria, Gammaproteobacteria
-TOBG_RS-448 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_NAT-255 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
-TOBG_RS-415 has multiple LCA at rank 'class': Deltaproteobacteria, Planctomycetia
-TOBG_SP-264 has multiple LCA at rank 'species': Pseudomonas mendocina, Alteromonas australica
-TOBG_NP-47 has multiple LCA at rank 'family': Leptospiraceae, Spirochaetaceae
-TOBG_EAC-121 has multiple LCA at rank 'species': Gammaproteobacteria bacterium REDSEA-S03_B5, Gammaproteobacteria bacterium REDSEA-S12_B4
-TOBG_SP-3028 has multiple LCA at rank 'family': Moraxellaceae, Flavobacteriaceae
-TOBG_EAC-695 has multiple LCA at rank 'species': Sulfitobacter sp. NAS-14.1, Sulfitobacter pontiacus, Sulfitobacter sp. CB2047
-TOBG_NAT-182 has multiple LCA at rank 'order': Rickettsiales, Pelagibacterales
-TOBG_SAT-1367 has multiple LCA at rank 'class': Alphaproteobacteria, Gammaproteobacteria
-TOBG_SAT-1613 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
-TOBG_SAT-58 has multiple LCA at rank 'genus': Marinobacter, Halomonas
-TOBG_NAT-60 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_CPC-11 has multiple LCA at rank 'species': Alcanivorax sp. CP2C, Alcanivorax sp. Nap_24
-TOBG_NAT-253 has multiple LCA at rank 'genus': Pimelobacter, Nocardioides
-TOBG_MED-714 has multiple LCA at rank 'order': Rickettsiales, Pelagibacterales
-TOBG_MED-741 has multiple LCA at rank 'order': Opitutales, Puniceicoccales
-TOBG_NP-997 has multiple LCA at rank 'phylum': Proteobacteria, Verrucomicrobia
-TOBG_ARS-30 has multiple LCA at rank 'order': Actinomycetales, Micrococcales
-TOBG_SP-155 has multiple LCA at rank 'genus': Planctomyces, Rubinisphaera
-TOBG_NAT-216 has multiple LCA at rank 'genus': Sphingomonas, Sphingobium
-TOBG_EAC-2 has multiple LCA at rank 'genus': Citromicrobium, Erythrobacter
-TOBG_CPC-96 has multiple LCA at rank 'class': Planctomycetia, Phycisphaerae
-TOBG_NAT-276 has multiple LCA at rank 'order': Xanthomonadales, Salinisphaerales
-TOBG_NP-6 has multiple LCA at rank 'species': Methylobacterium oryzae, Methylobacterium sp. B1, Methylobacterium sp. GXF4, Streptomyces purpurogeneiscleroticus, Methylobacterium phyllosphaerae
-TOBG_SAT-184 has multiple LCA at rank 'genus': Candidatus Atelocyanobacterium, Cyanothece
-TOBG_SP-19 has multiple LCA at rank 'family': Cryomorphaceae, Crocinitomicaceae
-TOBG_IN-9 has multiple LCA at rank 'species': Ruegeria mobilis, Pseudomonas pachastrellae
-TOBG_NAT-82 has multiple LCA at rank 'species': Thioclava sp. DLFJ4-1, Thioclava sp. F36-6, Thioclava sp. DLFJ5-1, Thioclava sp. F28-4, Thioclava sp. TAW-CT134, Thioclava sp. F36-7
-TOBG_IN-16 has multiple LCA at rank 'species': Caulobacterales bacterium RIFOXYB1_FULL_67_16, Brevundimonas sp. DS20
-TOBG_ARS-24 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_SP-362 has multiple LCA at rank 'class': Alphaproteobacteria, Gammaproteobacteria
-TOBG_IN-33 has multiple LCA at rank 'phylum': Euryarchaeota, Chlorophyta
-TOBG_RS-404 has multiple LCA at rank 'order': Actinomycetales, Micrococcales
-TOBG_NAT-64 has multiple LCA at rank 'species': Ruegeria mobilis, Pseudomonas pachastrellae
-TOBG_EAC-103 has multiple LCA at rank 'family': Microbacteriaceae, Sphingomonadaceae
-TOBG_CPC-17 has multiple LCA at rank 'species': Paraglaciecola mesophila, Pseudoalteromonas atlantica, Pseudoalteromonas sp. PLSV
-TOBG_NP-53 has multiple LCA at rank 'class': Deltaproteobacteria, Verrucomicrobiae
-TOBG_NAT-149 has multiple LCA at rank 'class': Planctomycetia, Phycisphaerae
-TOBG_MED-653 has multiple LCA at rank 'genus': Ponticaulis, Oceanicaulis
-TOBG_IN-929 has multiple LCA at rank 'family': Alteromonadaceae, Halieaceae
-TOBG_SP-332 has multiple LCA at rank 'family': Leptospiraceae, Spirochaetaceae
-TOBG_RS-355 has multiple LCA at rank 'species': Herbaspirillum huttiense, Herbaspirillum sp. B39
-TOBG_SP-121 has multiple LCA at rank 'family': Planctomycetaceae, Rhodobacteraceae
-TOBG_MED-637 has multiple LCA at rank 'order': Actinomycetales, Micrococcales
-TOBG_SP-44 has multiple LCA at rank 'phylum': Balneolaeota, Bacteroidetes
-TOBG_SP-229 has multiple LCA at rank 'family': Acidiferrobacteraceae, Acidimicrobiaceae
-TOBG_SAT-1308 has multiple LCA at rank 'species': Thalassospira profundimaris, Thalassospira tepidiphila, Thalassospira sp. Nap_22
-TOBG_CPC-48 has multiple LCA at rank 'species': Marinobacter sp. CP1, Marinobacter sp. tcs-11, Marinobacter sp. EVN1, Marinobacter hydrocarbonoclasticus
-TOBG_CPC-79 has multiple LCA at rank 'phylum': Balneolaeota, Bacteroidetes
-TOBG_RS-615 has multiple LCA at rank 'class': Alphaproteobacteria, Gammaproteobacteria
-TOBG_RS-410 has multiple LCA at rank 'species': Gammaproteobacteria bacterium REDSEA-S03_B5, Gammaproteobacteria bacterium REDSEA-S12_B4
-TOBG_ARS-21 has multiple LCA at rank 'superkingdom': Archaea, Bacteria
-TOBG_SAT-51 has multiple LCA at rank 'family': Rhodobacteraceae, Cytophagaceae, Flavobacteriaceae
-TOBG_EAC-18 has multiple LCA at rank 'family': Oceanospirillaceae, Halomonadaceae
-TOBG_EAC-53 has multiple LCA at rank 'family': Cryomorphaceae, Crocinitomicaceae
-TOBG_SAT-216 has multiple LCA at rank 'genus': Sphingomonas, Sphingobium
-TOBG_MED-643 has multiple LCA at rank 'class': Opitutae, Planctomycetia
-TOBG_CPC-47 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_NAT-111 has multiple LCA at rank 'species': Muricauda zhangzhouensis, Muricauda ruestringensis
-TOBG_ARS-25 has multiple LCA at rank 'species': Oleibacter sp. HI0075, Oleibacter marinus
-TOBG_NAT-157 has multiple LCA at rank 'genus': Cycloclasticus, Haliea
-TOBG_NP-11 has multiple LCA at rank 'species': Exophiala xenobiotica, Cadophora malorum
-TOBG_SAT-62 has multiple LCA at rank 'species': Limnobacter sp. MED105, Limnobacter sp. CACIAM 66H1
-TOBG_EAC-77 has multiple LCA at rank 'family': Rhodobacteraceae, Rhodobiaceae
-TOBG_EAC-21 has multiple LCA at rank 'family': Rhodospirillaceae, Sinobacteraceae
-TOBG_SAT-113 has multiple LCA at rank 'species': Cobetia amphilecti, Cobetia sp. UCD-24C
-TOBG_SAT-1505 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
-TOBG_EAC-683 has multiple LCA at rank 'species': Pseudaminobacter manganicus, Martelella sp. AD-3, Martelella mediterranea
-TOBG_NP-3 has multiple LCA at rank 'genus': Xanthomarina, Pseudomonas
-TOBG_SAT-40 has multiple LCA at rank 'species': Spongiibacter sp. IMCC21906, Spongiibacter tropicus
-TOBG_CPC-67 has multiple LCA at rank 'species': Aequorivita vladivostokensis, Vitellibacter aquimaris
-TOBG_NAT-42 has multiple LCA at rank 'phylum': Crenarchaeota, Thaumarchaeota
-TOBG_CPC-49 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_SP-269 has multiple LCA at rank 'species': Marinobacter salarius, Marinobacter sp. C18
-TOBG_ARS-1037 has multiple LCA at rank 'species': Ruegeria mobilis, Pseudomonas pachastrellae
-TOBG_RS-367 has multiple LCA at rank 'species': Citromicrobium sp. JLT1363, Croceicoccus mobilis
-TOBG_CPC-40 has multiple LCA at rank 'species': Donghicola sp. S598, Thiobacimonas profunda
-TOBG_SP-288 has multiple LCA at rank 'species': Cobetia amphilecti, Cobetia sp. UCD-24C
-TOBG_RS-397 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_SP-3096 has multiple LCA at rank 'phylum': Proteobacteria, Chloroflexi
-TOBG_MED-636 has multiple LCA at rank 'family': Alteromonadaceae, Flammeovirgaceae
-TOBG_SP-226 has multiple LCA at rank 'order': Actinomycetales, Micrococcales
-TOBG_SAT-146 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_EAC-57 has multiple LCA at rank 'species': Hyphomonas sp. L-53-1-40, Hyphomonas atlantica
-TOBG_NP-1171 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
-TOBG_SAT-75 has multiple LCA at rank 'species': Oleibacter sp. HI0075, Oleibacter marinus
-TOBG_NAT-61 has multiple LCA at rank 'family': Planctomycetaceae, Synechococcaceae
-TOBG_NAT-5 has multiple LCA at rank 'species': Aequorivita vladivostokensis, Vitellibacter aquimaris
-TOBG_IN-43 has multiple LCA at rank 'order': Actinomycetales, Micrococcales
-TOBG_RS-464 has multiple LCA at rank 'phylum': Acidobacteria, Chloroflexi
-TOBG_IN-924 has multiple LCA at rank 'phylum': Euryarchaeota, Actinobacteria
-TOBG_SAT-7 has multiple LCA at rank 'species': Citromicrobium sp. RCC1878, Citromicrobium sp. WPS32
-TOBG_SP-236 has multiple LCA at rank 'genus': Sulfitobacter, Oceanibulbus
-TOBG_SP-336 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
-TOBG_EAC-49 has multiple LCA at rank 'genus': Halomonas, Pusillimonas
-TOBG_NAT-91 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_RS-412 has multiple LCA at rank 'species': Rhodobacteraceae bacterium REDSEA-S34_B6, alpha proteobacterium SCGC AAA298-K06, Rhodobacteraceae bacterium REDSEA-S29_B10
-TOBG_NAT-176 has multiple LCA at rank 'family': Leptospiraceae, Spirochaetaceae
-TOBG_SP-3983 has multiple LCA at rank 'class': Alphaproteobacteria, Gammaproteobacteria
-TOBG_CPC-14 has multiple LCA at rank 'species': Idiomarina sp. MD25a, Idiomarina sp. T82-3
-TOBG_SP-158 has multiple LCA at rank 'genus': Marinovum, Pseudooceanicola
-TOBG_NAT-75 has multiple LCA at rank 'species': Alcanivorax sp. CP2C, Alcanivorax sp. Nap_24
-TOBG_IN-11 has multiple LCA at rank 'species': Hyphomonas sp. L-53-1-40, Oceanicaulis sp. HTCC2633
-TOBG_SP-333 has multiple LCA at rank 'order': Oceanospirillales, Alteromonadales
-TOBG_SP-246 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_NP-25 has multiple LCA at rank 'genus': Microbacterium, Leifsonia
-TOBG_EAC-31 has multiple LCA at rank 'species': Aequorivita vladivostokensis, Vitellibacter aquimaris
-TOBG_SP-3110 has multiple LCA at rank 'genus': Oceanicaulis, Maricaulis
-TOBG_SP-152 has multiple LCA at rank 'species': Alteromonas naphthalenivorans, Alteromonas australica
-TOBG_SP-4365 has multiple LCA at rank 'class': Planctomycetia, Phycisphaerae
-TOBG_MED-837 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
-TOBG_SAT-32 has multiple LCA at rank 'class': Deltaproteobacteria, Mamiellophyceae
-TOBG_SP-57 has multiple LCA at rank 'genus': Sulfitobacter, Roseobacter
-TOBG_EAC-102 has multiple LCA at rank 'species': Ruegeria mobilis, Pseudomonas pachastrellae
-TOBG_CPC-39 has multiple LCA at rank 'species': Hyphomonas jannaschiana, Hyphomonas adhaerens
-TOBG_NAT-129 has multiple LCA at rank 'order': Xanthomonadales, Chromatiales
-TOBG_ARS-733 has multiple LCA at rank 'species': Pseudomonas alcaliphila, Pseudomonas sp. 1-7
-TOBG_NAT-686 has multiple LCA at rank 'class': Alphaproteobacteria, Flavobacteriia
-TOBG_MED-840 has multiple LCA at rank 'order': Opitutales, Puniceicoccales
-TOBG_SAT-88 has multiple LCA at rank 'species': Pseudomonas xanthomarina, Pseudomonas stutzeri
-TOBG_NP-52 has multiple LCA at rank 'order': Actinomycetales, Micrococcales
-TOBG_NP-993 has multiple LCA at rank 'phylum': Proteobacteria, Acidobacteria
-TOBG_ARS-4 has multiple LCA at rank 'class': Alphaproteobacteria, Gammaproteobacteria
-TOBG_NP-96 has multiple LCA at rank 'species': Marinobacter salarius, Marinobacter algicola
-TOBG_RS-422 has multiple LCA at rank 'species': SAR116 cluster bacterium REDSEA-S02_B12, SAR116 cluster bacterium REDSEA-S10_B10N8
-TOBG_EAC-98 has multiple LCA at rank 'species': Microbacterium laevaniformans, Croceicoccus marinus
-TOBG_CPC-63 has multiple LCA at rank 'family': Cryomorphaceae, Crocinitomicaceae
-TOBG_MED-616 has multiple LCA at rank 'species': Rhodobacteraceae bacterium REDSEA-S34_B6, alpha proteobacterium SCGC AAA298-K06
-TOBG_RS-426 has multiple LCA at rank 'class': Alphaproteobacteria, Gammaproteobacteria
-TOBG_IN-6 has multiple LCA at rank 'species': Marinobacter sp. CP1, Marinobacter manganoxydans, Marinobacter adhaerens, Marinobacter sp. DSM 26671
-TOBG_NAT-284 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
-TOBG_IN-919 has multiple LCA at rank 'phylum': Euryarchaeota, Actinobacteria
-TOBG_NP-939 has multiple LCA at rank 'species': Ruegeria mobilis, Pseudomonas pachastrellae, Pseudomonas sabulinigri
-TOBG_CPC-8 has multiple LCA at rank 'species': Marinobacter salarius, Marinobacter algicola, Marinobacter sp. MCTG268, Marinobacter sp. C18
-TOBG_SP-182 has multiple LCA at rank 'species': Glaciecola sp. 4H-3-7+YE-5, Paraglaciecola agarilytica, Paraglaciecola chathamensis
-TOBG_SAT-70 has multiple LCA at rank 'order': Alteromonadales, Pseudomonadales
-TOBG_SP-347 has multiple LCA at rank 'species': Candidatus Magnetoovum chiemensis, Limnobacter sp. MED105, Limnobacter sp. CACIAM 66H1
-TOBG_NAT-87 has multiple LCA at rank 'class': Verrucomicrobiae, Gammaproteobacteria
-TOBG_NAT-143 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
-TOBG_EAC-71 has multiple LCA at rank 'genus': Sphingobium, Altererythrobacter
-TOBG_SAT-65 has multiple LCA at rank 'family': Cryomorphaceae, Crocinitomicaceae
-TOBG_CPC-9 has multiple LCA at rank 'species': Zunongwangia profunda, Cadophora malorum
-TOBG_SP-10 has multiple LCA at rank 'family': Planctomycetaceae, Phycisphaeraceae
-TOBG_SP-341 has multiple LCA at rank 'family': Cryomorphaceae, Crocinitomicaceae
 TOBG_EAC-631 has multiple LCA at rank 'species': Hyphomonas sp. T16B2, Hyphomonas beringensis
-TOBG_SAT-23 has multiple LCA at rank 'genus': Oceanicaulis, Maricaulis
-TOBG_SP-50 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_SAT-92 has multiple LCA at rank 'species': Methylophaga sulfidovorans, Methylophaga aminisulfidivorans
-TOBG_SAT-230 has multiple LCA at rank 'family': Oceanospirillaceae, Cellvibrionaceae
-TOBG_NP-26 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_SP-2971 has multiple LCA at rank 'class': Acidimicrobiia, Gammaproteobacteria
-TOBG_ARS-1 has multiple LCA at rank 'species': Pelagibacteraceae bacterium ETNP-OMZ-SAG-B3, Pelagibacteraceae bacterium ETNP-OMZ-SAG-A6
-TOBG_SAT-46 has multiple LCA at rank 'species': Microbacterium laevaniformans, Microbacteriaceae bacterium
-TOBG_EAC-625 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
-TOBG_MED-631 has multiple LCA at rank 'species': SAR324 cluster bacterium lautmerah10, SAR324 cluster bacterium REDSEA-S11_B7
-TOBG_SAT-143 has multiple LCA at rank 'species': Marine group II euryarchaeote REDSEA-S25_B4N5, Marine group II euryarchaeote REDSEA-S19_B7N8
-TOBG_NP-156 has multiple LCA at rank 'species': Alcanivorax sp. CP2C, Alcanivorax sp. Nap_24
-TOBG_NP-7 has multiple LCA at rank 'species': Sulfitobacter pontiacus, Sulfitobacter sp. CB2047
-TOBG_NAT-116 has multiple LCA at rank 'genus': Microbacterium, Leifsonia
-TOBG_ARS-12 has multiple LCA at rank 'species': Ruegeria mobilis, Pseudomonas pachastrellae
-TOBG_SAT-106 has multiple LCA at rank 'species': Aequorivita vladivostokensis, Vitellibacter aquimaris
-TOBG_EAC-16 has multiple LCA at rank 'species': Sulfitobacter sp. HI0082, Sulfitobacter dubius
-TOBG_SAT-1 has multiple LCA at rank 'species': Ruegeria mobilis, Pseudomonas pachastrellae
-TOBG_SP-136 has multiple LCA at rank 'family': Cryomorphaceae, Crocinitomicaceae
-TOBG_NAT-22 has multiple LCA at rank 'family': Planctomycetaceae, Phycisphaeraceae
-TOBG_SP-245 has multiple LCA at rank 'order': Rhodobacterales, Rhizobiales
-TOBG_IN-38 has multiple LCA at rank 'genus': Alcanivorax, Pusillimonas
-TOBG_SAT-183 has multiple LCA at rank 'species': Acinetobacter venetianus, Acinetobacter haemolyticus
-TOBG_NAT-3 has multiple LCA at rank 'genus': Mycobacterium, Ahrensia
-TOBG_EAC-15 has multiple LCA at rank 'species': Aurantimonas manganoxydans, Aurantimonas coralicida
-TOBG_MED-734 has multiple LCA at rank 'family': Cryomorphaceae, Crocinitomicaceae
-TOBG_SP-36 has multiple LCA at rank 'species': Marinobacter sp. tcs-11, Marinobacter sp. EVN1
-TOBG_SAT-5 has multiple LCA at rank 'species': Aurantimonas manganoxydans, Aurantimonas coralicida
-TOBG_NP-43 has multiple LCA at rank 'species': Sphingobium xenophagum, Sphingomonas sp. SKA58
-TOBG_NAT-501 has multiple LCA at rank 'phylum': Bacteroidetes, Chloroflexi
-TOBG_NAT-46 has multiple LCA at rank 'order': Xanthomonadales, Salinisphaerales
-TOBG_NAT-14 has multiple LCA at rank 'family': Planctomycetaceae, Bathycoccaceae
-TOBG_EAC-26 has multiple LCA at rank 'family': Alteromonadaceae, Halieaceae
-TOBG_CPC-4 has multiple LCA at rank 'species': Sulfitobacter pontiacus, Sulfitobacter sp. CB2047
-TOBG_SAT-8 has multiple LCA at rank 'species': Sulfitobacter sp. NAS-14.1, Sulfitobacter pontiacus, Sulfitobacter sp. CB2047
-TOBG_NAT-49 has multiple LCA at rank 'order': Actinomycetales, Micrococcales
-TOBG_SAT-1386 has multiple LCA at rank 'genus': Sulfitobacter, Oceanibulbus
-TOBG_SP-96 has multiple LCA at rank 'class': Planctomycetia, Alphaproteobacteria, Phycisphaerae
-TOBG_ARS-3 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
-TOBG_SP-33 has multiple LCA at rank 'species': Marinobacter sp. CP1, Marinobacter manganoxydans, Marinobacter sp. DSM 26671
-TOBG_NP-150 has multiple LCA at rank 'phylum': Proteobacteria, Gemmatimonadetes
-TOBG_ARS-1004 has multiple LCA at rank 'phylum': Euryarchaeota, Bacteroidetes
-TOBG_CPC-13 has multiple LCA at rank 'genus': Pseudoalteromonas, Rheinheimera
-TOBG_CPC-1357 has multiple LCA at rank 'class': Flavobacteriia, Gammaproteobacteria
-TOBG_SAT-19 has multiple LCA at rank 'genus': Maribacter, Muricauda
-TOBG_MED-863 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
-TOBG_SP-64 has multiple LCA at rank 'species': Alcanivorax sp. CP2C, Alcanivorax sp. Nap_24
-TOBG_MED-215 has multiple LCA at rank 'order': Rhodobacterales, Rickettsiales
-TOBG_NP-48 has multiple LCA at rank 'phylum': Euryarchaeota, Verrucomicrobia
-TOBG_NAT-145 has multiple LCA at rank 'order': Opitutales, Puniceicoccales
-TOBG_ARS-121 has multiple LCA at rank 'genus': Citromicrobium, Erythrobacter
-TOBG_NAT-121 has multiple LCA at rank 'genus': Haliea, Halioglobus
+TOBG_SAT-28 has multiple LCA at rank 'species': Thalassospira xiamenensis, Thalassospira lucentensis
+TOBG_SAT-143 has multiple LCA at rank 'species': Marine group II euryarchaeote REDSEA-S19_B7N8, Marine group II euryarchaeote REDSEA-S25_B4N5
+TOBG_EAC-1995 has multiple LCA at rank 'class': Gammaproteobacteria, Alphaproteobacteria
+TOBG_SAT-51 has multiple LCA at rank 'family': Cytophagaceae, Flavobacteriaceae
 TOBG_NP-124 has multiple LCA at rank 'species': Cupriavidus pauculus, beta proteobacterium FWI2
-TOBG_SAT-198 has multiple LCA at rank 'species': Confluentimicrobium sp. EMB200-NS6, Rhodovulum sp. NI22
-TOBG_RS-354 has multiple LCA at rank 'species': Marine group II euryarchaeote REDSEA-S10_B2, Marine group II euryarchaeote REDSEA-S11_B3N4
-TOBG_EAC-116 has multiple LCA at rank 'genus': Sphingomonas, Sphingobium
-TOBG_SAT-114 has multiple LCA at rank 'species': Maribacter dokdonensis, Maribacter sp. MAR_2009_60, Maribacter sp. 1_2014MBL_MicDiv
-TOBG_SAT-224 has multiple LCA at rank 'species': Rhodobacteraceae bacterium REDSEA-S34_B6, alpha proteobacterium SCGC AAA298-K06
-TOBG_SAT-1356 has multiple LCA at rank 'species': Alcanivorax sp. CP2C, Alcanivorax sp. Nap_24
-TOBG_NP-4 has multiple LCA at rank 'species': Variovorax paradoxus, Variovorax sp. PDC80
-TOBG_NP-146 has multiple LCA at rank 'family': Alteromonadaceae, Halieaceae
-TOBG_IN-2 has multiple LCA at rank 'genus': Xanthomarina, Pseudomonas
+TOBG_SP-333 has multiple LCA at rank 'order': Alteromonadales, Oceanospirillales
+TOBG_SAT-148 has multiple LCA at rank 'order': Alteromonadales, Oceanospirillales
+TOBG_SP-121 has multiple LCA at rank 'family': Rhodobacteraceae, Planctomycetaceae
+TOBG_SP-3028 has multiple LCA at rank 'family': Flavobacteriaceae, Moraxellaceae
+TOBG_RS-665 has multiple LCA at rank 'phylum': Chloroflexi, Proteobacteria
+TOBG_SP-264 has multiple LCA at rank 'genus': Pseudomonas, Alteromonas
+TOBG_SP-131 has multiple LCA at rank 'species': Thalassospira profundimaris, Thalassospira sp. HJ
+TOBG_ARS-733 has multiple LCA at rank 'species': Pseudomonas alcaliphila, Pseudomonas sp. 1-7
+TOBG_ARS-12 has multiple LCA at rank 'genus': Pseudomonas, Ruegeria
+TOBG_ARS-1 has multiple LCA at rank 'species': Pelagibacteraceae bacterium ETNP-OMZ-SAG-A6, Pelagibacteraceae bacterium ETNP-OMZ-SAG-B3
+TOBG_CPC-9 has multiple LCA at rank 'species': Zunongwangia profunda, Cadophora malorum
+TOBG_ARS-58 has multiple LCA at rank 'species': Marine group II euryarchaeote REDSEA-S11_B3N4, Marine group II euryarchaeote REDSEA-S10_B2
+TOBG_NP-982 has multiple LCA at rank 'phylum': Chloroflexi, Acidobacteria, Proteobacteria
+TOBG_IN-924 has multiple LCA at rank 'phylum': Euryarchaeota, Actinobacteria
+TOBG_NP-6 has multiple LCA at rank 'species': Methylobacterium oryzae, Methylobacterium sp. GXF4, Streptomyces purpurogeneiscleroticus, Methylobacterium phyllosphaerae, Methylobacterium sp. B1
+TOBG_SP-261 has multiple LCA at rank 'species': Candidatus Marinimicrobia bacterium REDSEA-S15_B13, Marinimicrobia bacterium TCS55
+TOBG_MED-631 has multiple LCA at rank 'species': SAR324 cluster bacterium lautmerah10, SAR324 cluster bacterium REDSEA-S11_B7
+TOBG_RS-354 has multiple LCA at rank 'species': Marine group II euryarchaeote REDSEA-S11_B3N4, Marine group II euryarchaeote REDSEA-S10_B2
+TOBG_NP-990 has multiple LCA at rank 'phylum': Verrucomicrobia, Proteobacteria
+TOBG_CPC-325 has multiple LCA at rank 'class': Gammaproteobacteria, Alphaproteobacteria
+TOBG_NP-997 has multiple LCA at rank 'phylum': Verrucomicrobia, Proteobacteria
+TOBG_SAT-40 has multiple LCA at rank 'family': Alteromonadaceae, Spongiibacteraceae
+TOBG_CPC-80 has multiple LCA at rank 'species': Idiomarina sp. 28-8, Idiomarina loihiensis
+TOBG_EAC-67 has multiple LCA at rank 'genus': Sphingobium, Paracoccus
+TOBG_NAT-171 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
+TOBG_SP-244 has multiple LCA at rank 'order': Xanthomonadales, Chromatiales
+TOBG_EAC-71 has multiple LCA at rank 'genus': Altererythrobacter, Sphingobium
+TOBG_CPC-28 has multiple LCA at rank 'class': Gammaproteobacteria, Alphaproteobacteria
+TOBG_RS-355 has multiple LCA at rank 'species': Herbaspirillum huttiense, Herbaspirillum sp. B39
+TOBG_MED-646 has multiple LCA at rank 'family': Alteromonadaceae, Halieaceae
+TOBG_RS-392 has multiple LCA at rank 'species': Marine group II euryarchaeote REDSEA-S19_B7N8, Marine group II euryarchaeote REDSEA-S25_B4N5
+TOBG_RS-422 has multiple LCA at rank 'species': SAR116 cluster bacterium REDSEA-S02_B12, SAR116 cluster bacterium REDSEA-S10_B10N8
+TOBG_NAT-284 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
+TOBG_NAT-501 has multiple LCA at rank 'phylum': Chloroflexi, Bacteroidetes
+TOBG_IN-47 has multiple LCA at rank 'family': Acidiferrobacteraceae, Planctomycetaceae
+TOBG_MED-195 has multiple LCA at rank 'species': Synechococcus sp. WH 8020, Synechococcus sp. CC9311
+TOBG_EAC-683 has multiple LCA at rank 'species': Martelella sp. AD-3, Pseudaminobacter manganicus
+TOBG_NP-125 has multiple LCA at rank 'genus': Alcanivorax, Marinobacter
+TOBG_SP-229 has multiple LCA at rank 'family': Acidiferrobacteraceae, Acidimicrobiaceae
+TOBG_EAC-57 has multiple LCA at rank 'genus': Rheinheimera, Hyphomonas
+TOBG_NP-11 has multiple LCA at rank 'species': Cadophora malorum, Exophiala xenobiotica
+TOBG_MED-697 has multiple LCA at rank 'genus': Marinobacter, Rhodopirellula
+TOBG_EAC-43 has multiple LCA at rank 'class': Flavobacteriia, Saprospiria
+TOBG_RS-818 has multiple LCA at rank 'phylum': Verrucomicrobia, Chloroflexi
+TOBG_NAT-49 has multiple LCA at rank 'order': Micrococcales, Actinomycetales
+TOBG_ARS-77 has multiple LCA at rank 'species': SAR116 cluster bacterium REDSEA-S02_B12, SAR116 cluster bacterium REDSEA-S10_B10N8
+TOBG_SAT-2823 has multiple LCA at rank 'class': Gammaproteobacteria, Cytophagia
+TOBG_EAC-2090 has multiple LCA at rank 'phylum': Chloroflexi, Acidobacteria
+TOBG_EAC-653 has multiple LCA at rank 'species': SAR116 cluster bacterium REDSEA-S02_B12, SAR116 cluster bacterium REDSEA-S10_B10N8
+TOBG_ARS-21 has multiple LCA at rank 'superkingdom': Archaea, Bacteria
+TOBG_IN-33 has multiple LCA at rank 'phylum': Euryarchaeota, Chlorophyta
+TOBG_EAC-50 has multiple LCA at rank 'species': Prorocentrum minimum, Marinobacter sp. LQ44, Marinobacter excellens, Marinobacter hydrocarbonoclasticus
+TOBG_SP-3069 has multiple LCA at rank 'class': Gammaproteobacteria, Alphaproteobacteria
+TOBG_NP-993 has multiple LCA at rank 'phylum': Acidobacteria, Proteobacteria
+TOBG_EAC-73 has multiple LCA at rank 'species': Gammaproteobacteria bacterium MFB021, Salinicola socius
+TOBG_EAC-2 has multiple LCA at rank 'genus': Citromicrobium, Erythrobacter
+TOBG_EAC-48 has multiple LCA at rank 'family': Rhodobacteraceae, Flavobacteriaceae
+TOBG_SP-155 has multiple LCA at rank 'genus': Rubinisphaera, Planctomyces
+TOBG_CPC-40 has multiple LCA at rank 'species': Donghicola sp. S598, Thiobacimonas profunda
+TOBG_EAC-21 has multiple LCA at rank 'family': Rhodospirillaceae, Sinobacteraceae
+TOBG_ARS-121 has multiple LCA at rank 'family': Erythrobacteraceae, Sphingomonadaceae
+TOBG_SAT-1308 has multiple LCA at rank 'species': Thalassospira profundimaris, Thalassospira sp. Nap_22, Thalassospira tepidiphila
+TOBG_SP-133 has multiple LCA at rank 'species': Pseudomonas stutzeri, Pseudomonas balearica
+TOBG_NP-48 has multiple LCA at rank 'phylum': Euryarchaeota, Verrucomicrobia
+TOBG_SP-3030 has multiple LCA at rank 'genus': Zunongwangia, Mesonia
 for tully-genome-sigs found 2631 signatures;
-out of 2015 that could be classified, 333 disagree at some rank.
+out of 2631 that could be classified, 73 disagree at some rank.
 	superkingdom: 1
-	phylum: 30
-	order: 22
-	class: 49
-	family: 65
-	genus: 39
-	species: 127
+	phylum: 11
+	order: 4
+	class: 8
+	family: 10
+	genus: 10
+	species: 29

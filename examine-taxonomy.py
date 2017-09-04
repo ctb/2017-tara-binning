@@ -96,10 +96,15 @@ def main():
     for name, sig in sigdict.items():
         taxid_set = collections.defaultdict(int)
         for hashval in sig.minhash.get_mins():
+
+            this_hashval_taxids = set()
             for (_, hashval_to_lca) in lca_db_list:
-                this_lca = hashval_to_lca.get(hashval)
-                if this_lca is not None:
-                    taxid_set[this_lca] += 1
+                hashval_lca = hashval_to_lca.get(hashval)
+                if hashval_lca is not None:
+                    this_hashval_taxids.add(hashval_lca)
+
+            this_hashval_lca = taxfoo.find_lca(this_hashval_taxids)
+            taxid_set[this_hashval_lca] += 1
 
         abundant_taxids = [k for k in taxid_set if taxid_set[k] >= THRESHOLD]
 
