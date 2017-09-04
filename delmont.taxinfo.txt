@@ -1,0 +1,158 @@
+loading taxonomic nodes from: db/genbank/nodes.dmp.gz
+loading taxonomic names from: db/genbank/names.dmp.gz
+loading k-mer DB from: db/delmont-k31.lca
+loading taxonomic nodes from: db/genbank/nodes.dmp.gz
+loading taxonomic names from: db/genbank/names.dmp.gz
+loading k-mer DB from: db/tully-k31.lca
+loading taxonomic nodes from: ../sourmash/genbank/genbank/nodes.dmp.gz
+loading taxonomic names from: ../sourmash/genbank/genbank/names.dmp.gz
+loading k-mer DB from: ../sourmash/genbank/genbank/genbank-k31.lca.gz
+loading all signatures: delmont-genome-sigs
+loading from cache: delmont-genome-sigs.pickle
+...loaded 957 signatures at k=31
+TARA_ASE_MAG_00025 has multiple LCA at rank 'family': Crocinitomicaceae, Flavobacteriaceae
+TARA_RED_MAG_00081 has multiple LCA at rank 'phylum': Actinobacteria, Acidobacteria
+TARA_MED_MAG_00024 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
+TARA_RED_MAG_00048 has multiple LCA at rank 'class': Acidimicrobiia, Gammaproteobacteria
+TARA_ANE_MAG_00074 has multiple LCA at rank 'order': Actinomycetales, Micrococcales
+TARA_PSE_MAG_00090 has multiple LCA at rank 'order': Rickettsiales, Pelagibacterales
+TARA_MED_MAG_00048 has multiple LCA at rank 'order': Actinomycetales, Micrococcales
+TARA_ANE_MAG_00020 has multiple LCA at rank 'order': Rickettsiales, Pelagibacterales
+TARA_PSE_MAG_00133 has multiple LCA at rank 'family': Oceanospirillaceae, Rhodobacteraceae
+TARA_ANW_MAG_00003 has multiple LCA at rank 'class': Gammaproteobacteria, Alphaproteobacteria
+TARA_PSE_MAG_00066 has multiple LCA at rank 'class': Phycisphaerae, Planctomycetia
+TARA_RED_MAG_00041 has multiple LCA at rank 'phylum': Chloroflexi, Acidobacteria
+TARA_PSW_MAG_00019 has multiple LCA at rank 'class': Acidimicrobiia, Gammaproteobacteria
+TARA_ANW_MAG_00009 has multiple LCA at rank 'genus': Haliea, Halioglobus
+TARA_PSE_MAG_00002 has multiple LCA at rank 'genus': Oceanicaulis, Maricaulis
+TARA_ASW_MAG_00004 has multiple LCA at rank 'species': Oleibacter sp. HI0075, Oleibacter marinus
+TARA_PSE_MAG_00144 has multiple LCA at rank 'species': Pseudoalteromonas sp. PAB 2.2, Pseudoalteromonas lipolytica
+TARA_PSE_MAG_00142 has multiple LCA at rank 'species': Pseudomonas pachastrellae, Ruegeria mobilis
+TARA_MED_MAG_00045 has multiple LCA at rank 'family': Alteromonadaceae, Halieaceae
+TARA_PSE_MAG_00100 has multiple LCA at rank 'species': Thalassospira xiamenensis, Thalassospira lucentensis
+TARA_PON_MAG_00046 has multiple LCA at rank 'order': Rickettsiales, Pelagibacterales
+TARA_ANW_MAG_00061 has multiple LCA at rank 'class': Flavobacteriia, Alphaproteobacteria
+TARA_ION_MAG_00023 has multiple LCA at rank 'order': Oceanospirillales, Alteromonadales
+TARA_PSW_MAG_00085 has multiple LCA at rank 'class': Phycisphaerae, Alphaproteobacteria
+TARA_ASE_MAG_00019 has multiple LCA at rank 'class': Gammaproteobacteria, Alphaproteobacteria
+TARA_PSW_MAG_00062 has multiple LCA at rank 'species': Pseudomonas pachastrellae, Pseudomonas sabulinigri, Ruegeria mobilis
+TARA_ASW_MAG_00018 has multiple LCA at rank 'family': Crocinitomicaceae, Cryomorphaceae, Porticoccaceae
+TARA_MED_MAG_00014 has multiple LCA at rank 'species': Verrucomicrobia bacterium SCGC AAA164-N20, Verrucomicrobia bacterium SCGC AAA164-E04
+TARA_PSE_MAG_00123 has multiple LCA at rank 'species': Marinobacter manganoxydans, Marinobacter sp. DSM 26671, Marinobacter sp. CP1
+TARA_RED_MAG_00116 has multiple LCA at rank 'family': Bathycoccaceae, Planctomycetaceae
+TARA_PSE_MAG_00145 has multiple LCA at rank 'class': Flavobacteriia, Alphaproteobacteria
+TARA_PSE_MAG_00150 has multiple LCA at rank 'family': Moraxellaceae, Flavobacteriaceae
+TARA_MED_MAG_00117 has multiple LCA at rank 'order': Opitutales, Puniceicoccales
+TARA_IOS_MAG_00034 has multiple LCA at rank 'class': Phycisphaerae, Planctomycetia
+TARA_RED_MAG_00078 has multiple LCA at rank 'class': Deltaproteobacteria, Planctomycetia
+TARA_ANE_MAG_00071 has multiple LCA at rank 'class': Flavobacteriia, Gammaproteobacteria
+TARA_ASE_MAG_00003 has multiple LCA at rank 'class': Saprospiria, Flavobacteriia
+TARA_IOS_MAG_00014 has multiple LCA at rank 'class': Opitutae, Deltaproteobacteria
+TARA_ANE_MAG_00031 has multiple LCA at rank 'species': Psychrobacter sp. AntiMn-1, Psychrobacter pacificensis
+TARA_ANW_MAG_00002 has multiple LCA at rank 'order': Salinisphaerales, Xanthomonadales
+TARA_ASW_MAG_00029 has multiple LCA at rank 'species': Pseudomonas pachastrellae, Ruegeria mobilis
+TARA_ANW_MAG_00015 has multiple LCA at rank 'family': Spirochaetaceae, Leptospiraceae
+TARA_PON_MAG_00068 has multiple LCA at rank 'family': Phycisphaeraceae, Planctomycetaceae
+TARA_PSE_MAG_00010 has multiple LCA at rank 'species': Stappia stellulata, Stappia sp. ES.058
+TARA_IOS_MAG_00061 has multiple LCA at rank 'family': Alteromonadaceae, Halieaceae
+TARA_PSE_MAG_00101 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
+TARA_ION_MAG_00032 has multiple LCA at rank 'species': Spongiibacter sp. IMCC21906, Spongiibacter tropicus
+TARA_ION_MAG_00059 has multiple LCA at rank 'species': Verrucomicrobia bacterium SCGC AAA300-N18, Verrucomicrobia bacterium SCGC AAA300-K03, Verrucomicrobia bacterium SCGC AAA300-O17
+TARA_ANE_MAG_00078 has multiple LCA at rank 'class': Balneolia, Gammaproteobacteria
+TARA_ION_MAG_00029 has multiple LCA at rank 'genus': Sphingomonas, Sphingobium
+TARA_PSW_MAG_00018 has multiple LCA at rank 'family': Phycisphaeraceae, Planctomycetaceae
+TARA_RED_MAG_00105 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
+TARA_MED_MAG_00090 has multiple LCA at rank 'family': Crocinitomicaceae, Cryomorphaceae
+TARA_PSE_MAG_00077 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
+TARA_ANE_MAG_00009 has multiple LCA at rank 'family': Aurantimonadaceae, Rhizobiaceae
+TARA_RED_MAG_00069 has multiple LCA at rank 'class': Gemmatimonadetes, Alphaproteobacteria
+TARA_PSW_MAG_00090 has multiple LCA at rank 'family': Crocinitomicaceae, Cryomorphaceae
+TARA_ION_MAG_00025 has multiple LCA at rank 'species': Labrenzia sp. C1B70, Labrenzia sp. CP4, Labrenzia aggregata
+TARA_PON_MAG_00071 has multiple LCA at rank 'class': Verrucomicrobiae, Actinobacteria
+TARA_PSW_MAG_00096 has multiple LCA at rank 'family': Crocinitomicaceae, Cryomorphaceae
+TARA_RED_MAG_00005 has multiple LCA at rank 'class': Gammaproteobacteria, Alphaproteobacteria
+TARA_PON_MAG_00067 has multiple LCA at rank 'phylum': Proteobacteria, Gemmatimonadetes
+TARA_ANW_MAG_00068 has multiple LCA at rank 'family': Synechococcaceae, Planctomycetaceae
+TARA_ANE_MAG_00004 has multiple LCA at rank 'phylum': Bacteroidetes, Verrucomicrobia, Balneolaeota
+TARA_MED_MAG_00108 has multiple LCA at rank 'genus': Cyanobium, Synechococcus
+TARA_PSE_MAG_00118 has multiple LCA at rank 'species': Alteromonas naphthalenivorans, Alteromonas stellipolaris
+TARA_PSE_MAG_00132 has multiple LCA at rank 'species': Pseudoalteromonas shioyasakiensis, Pseudoalteromonas sp. XI10
+TARA_PSE_MAG_00089 has multiple LCA at rank 'class': Phycisphaerae, Planctomycetia
+TARA_MED_MAG_00073 has multiple LCA at rank 'order': Opitutales, Puniceicoccales
+TARA_PSE_MAG_00035 has multiple LCA at rank 'species': Cobetia sp. UCD-24C, Cobetia amphilecti
+TARA_ANE_MAG_00037 has multiple LCA at rank 'species': Oleibacter sp. HI0075, Oleibacter marinus
+TARA_ANE_MAG_00082 has multiple LCA at rank 'class': Verrucomicrobiae, Gammaproteobacteria
+TARA_ANW_MAG_00053 has multiple LCA at rank 'class': Flavobacteriia, Gammaproteobacteria
+TARA_ANW_MAG_00057 has multiple LCA at rank 'class': Gammaproteobacteria, Alphaproteobacteria
+TARA_PSE_MAG_00110 has multiple LCA at rank 'family': Oceanospirillaceae, Pseudoalteromonadaceae
+TARA_ASW_MAG_00022 has multiple LCA at rank 'family': Aurantimonadaceae, Rhizobiaceae
+TARA_MED_MAG_00134 has multiple LCA at rank 'class': Opitutae, Planctomycetia
+TARA_PON_MAG_00015 has multiple LCA at rank 'class': Verrucomicrobiae, Deltaproteobacteria
+TARA_PSE_MAG_00022 has multiple LCA at rank 'family': Wenzhouxiangellaceae, Rhodobacteraceae
+TARA_PON_MAG_00077 has multiple LCA at rank 'class': Verrucomicrobiae, Zetaproteobacteria, Alphaproteobacteria
+TARA_IOS_MAG_00052 has multiple LCA at rank 'order': Rhodospirillales, Rickettsiales
+TARA_PSE_MAG_00107 has multiple LCA at rank 'species': Salegentibacter salarius, Salegentibacter mishustinae
+TARA_PON_MAG_00001 has multiple LCA at rank 'family': Alteromonadaceae, Spongiibacteraceae
+TARA_RED_MAG_00104 has multiple LCA at rank 'genus': Alcanivorax, Marinobacter
+TARA_ASW_MAG_00003 has multiple LCA at rank 'genus': Cyanothece, Candidatus Atelocyanobacterium
+TARA_PSW_MAG_00113 has multiple LCA at rank 'class': Phycisphaerae, Planctomycetia
+TARA_ANE_MAG_00080 has multiple LCA at rank 'family': Alteromonadaceae, Halieaceae
+TARA_PSW_MAG_00047 has multiple LCA at rank 'family': Crocinitomicaceae, Cryomorphaceae
+TARA_PSE_MAG_00114 has multiple LCA at rank 'family': Flavobacteriaceae, Rhodospirillaceae
+TARA_MED_MAG_00058 has multiple LCA at rank 'species': Oleibacter sp. HI0075, Oleibacter marinus
+TARA_PSW_MAG_00089 has multiple LCA at rank 'family': Alteromonadaceae, Halieaceae
+TARA_PSW_MAG_00016 has multiple LCA at rank 'family': Bdellovibrionaceae, Rhodobacteraceae
+TARA_ASE_MAG_00017 has multiple LCA at rank 'phylum': Bacteroidetes, Cyanobacteria
+TARA_ANW_MAG_00011 has multiple LCA at rank 'species': Thioclava sp. F36-7, Thioclava sp. TAW-CT134, Thioclava sp. DLFJ5-1, Thioclava sp. DLFJ4-1, Thioclava sp. F28-4, Thioclava sp. F36-6
+TARA_PSE_MAG_00005 has multiple LCA at rank 'species': Olleya marilimosa, Olleya namhaensis
+TARA_PSW_MAG_00134 has multiple LCA at rank 'family': Aurantimonadaceae, Rhizobiaceae
+TARA_PON_MAG_00042 has multiple LCA at rank 'species': Idiomarina sp. WRN-38, Idiomarina zobellii
+TARA_ION_MAG_00067 has multiple LCA at rank 'species': Oleibacter sp. HI0075, Oleibacter marinus
+TARA_MED_MAG_00042 has multiple LCA at rank 'order': Rhodobacterales, Rickettsiales, Pelagibacterales
+TARA_PSE_MAG_00024 has multiple LCA at rank 'genus': Yangia, Pelagibaca
+TARA_PSE_MAG_00001 has multiple LCA at rank 'phylum': Bacteroidetes, Balneolaeota
+TARA_PSE_MAG_00097 has multiple LCA at rank 'genus': Planctomyces, Rubinisphaera
+TARA_PSW_MAG_00116 has multiple LCA at rank 'family': Alteromonadaceae, Halieaceae
+TARA_ANW_MAG_00017 has multiple LCA at rank 'family': Spirochaetaceae, Leptospiraceae
+TARA_ANW_MAG_00014 has multiple LCA at rank 'class': Phycisphaerae, Planctomycetia
+TARA_ION_MAG_00058 has multiple LCA at rank 'species': Pseudomonas oleovorans, Pseudomonas mendocina
+TARA_PSW_MAG_00127 has multiple LCA at rank 'family': Phycisphaeraceae, Planctomycetaceae
+TARA_ANE_MAG_00003 has multiple LCA at rank 'order': Opitutales, Puniceicoccales
+TARA_ION_MAG_00072 has multiple LCA at rank 'class': Deltaproteobacteria, Mamiellophyceae
+TARA_PON_MAG_00084 has multiple LCA at rank 'class': Opitutae, Gammaproteobacteria
+TARA_MED_MAG_00078 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
+TARA_PON_MAG_00058 has multiple LCA at rank 'species': Idiomarina sp. T82-3, Idiomarina baltica
+TARA_IOS_MAG_00067 has multiple LCA at rank 'species': Marinobacter sp. EVN1, Marinobacter sp. tcs-11
+TARA_ION_MAG_00004 has multiple LCA at rank 'species': Limnobacter sp. MED105, Limnobacter sp. CACIAM 66H1, Candidatus Magnetoovum chiemensis
+TARA_MED_MAG_00022 has multiple LCA at rank 'class': Gammaproteobacteria, Alphaproteobacteria
+TARA_IOS_MAG_00006 has multiple LCA at rank 'species': Alcanivorax sp. CP2C, Alcanivorax sp. Nap_24
+TARA_ION_MAG_00002 has multiple LCA at rank 'species': Brevundimonas sp. DS20, Caulobacterales bacterium RIFOXYB1_FULL_67_16
+TARA_RED_MAG_00022 has multiple LCA at rank 'species': Oleibacter sp. HI0075, Oleibacter marinus
+TARA_PSE_MAG_00103 has multiple LCA at rank 'species': Roseovarius sp. A-2, Roseovarius tolerans
+TARA_PSE_MAG_00111 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
+TARA_RED_MAG_00114 has multiple LCA at rank 'class': Deltaproteobacteria, Mamiellophyceae
+TARA_PON_MAG_00061 has multiple LCA at rank 'species': Alteromonas australica, Alteromonas macleodii
+TARA_ANE_MAG_00069 has multiple LCA at rank 'order': Rhodobacterales, Rickettsiales
+TARA_ASE_MAG_00014 has multiple LCA at rank 'class': Actinobacteria, Acidimicrobiia
+TARA_IOS_MAG_00063 has multiple LCA at rank 'species': Marinobacter sp. REDSEA-S21_B2N3, Cladosiphon okamuranus, Marinobacter sp. CP1, Marinobacter adhaerens
+TARA_RED_MAG_00103 has multiple LCA at rank 'family': Sphingomonadaceae, Erythrobacteraceae
+TARA_ANW_MAG_00036 has multiple LCA at rank 'order': Salinisphaerales, Xanthomonadales
+TARA_ANE_MAG_00088 has multiple LCA at rank 'class': Deltaproteobacteria, Mamiellophyceae
+TARA_RED_MAG_00019 has multiple LCA at rank 'phylum': Chloroflexi, Proteobacteria
+TARA_PSW_MAG_00128 has multiple LCA at rank 'genus': Martelella, Hyphomonas
+TARA_RED_MAG_00026 has multiple LCA at rank 'class': Gammaproteobacteria, Alphaproteobacteria
+TARA_PSE_MAG_00028 has multiple LCA at rank 'class': Phycisphaerae, Planctomycetia
+TARA_ASE_MAG_00015 has multiple LCA at rank 'class': Flavobacteriia, Alphaproteobacteria
+TARA_PSW_MAG_00110 has multiple LCA at rank 'class': Phycisphaerae, Planctomycetia
+TARA_RED_MAG_00111 has multiple LCA at rank 'class': Gammaproteobacteria, Alphaproteobacteria
+TARA_ASW_MAG_00012 has multiple LCA at rank 'species': Maribacter dokdonensis, Maribacter sp. 1_2014MBL_MicDiv, Maribacter sp. MAR_2009_60
+TARA_ANW_MAG_00010 has multiple LCA at rank 'species': Aequorivita vladivostokensis, Vitellibacter aquimaris
+TARA_ANW_MAG_00050 has multiple LCA at rank 'class': Gammaproteobacteria, Alphaproteobacteria
+for delmont-genome-sigs found 957 signatures;
+out of 908 that could be classified, 138 disagree at some rank.
+	phylum: 7
+	order: 14
+	class: 40
+	family: 33
+	genus: 9
+	species: 35
