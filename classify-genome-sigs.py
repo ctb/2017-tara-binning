@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 """
-Classify a directory of sourmash signatures by taxonomic rank, using
-a kraken-style least-common-ancestor analysis.
+Classify a directory of sourmash signatures for individual genomes by
+taxonomic rank, using a kraken-style least-common-ancestor analysis.
 
 TODO: allow other LCA DBs. output in metacoder form.
 """
