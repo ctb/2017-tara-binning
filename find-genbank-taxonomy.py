@@ -1,9 +1,17 @@
 #! /usr/bin/env python
+"""
+Classify a directory of sourmash signatures by taxonomic rank, using
+a kraken-style least-common-ancestor analysis.
+
+TODO: allow other LCA DBs. output in metacoder form.
+"""
 import os
 import argparse
 import collections
 import sys
+import csv
 from pickle import load, dump
+
 import sourmash_lib.signature
 
 import lca_json                      # from github.com/ctb/2017-sourmash-lca
@@ -73,93 +81,136 @@ def main():
     p.add_argument('-k', '--ksize', default=31, type=int)
     p.add_argument('dir')
     p.add_argument('-o', '--output-csv')
+    p.add_argument('--threshold', type=int, default=THRESHOLD,
+                   help="minimum number of times a taxid must be present to count")
+   
     args = p.parse_args()
 
     if args.output_csv:
-        outfp = open(args.output_csv, 'wt')
-        outfp.write('{},{},{},{},{}\n'.format('name', 'taxid', 'status', 'rank_info', 'lineage'))
+        output_filename = args.output_csv
+    else:
+        output_filename = os.path.basename(args.dir) + '.taxonomy.csv'
 
-    # load all the LCA JSON files
+    outfp = open(output_filename, 'wt')
+    outw = csv.writer(outfp)
+    outw.writerow(['name', 'taxid', 'status', 'rank_info', 'lineage'])
+
+    # load the LCA databases from the JSON file(s)
     lca_db_list = []
     for lca_filename in LCA_DBs:
+        print('loading LCA database from {}'.format(lca_filename))
         lca_db = lca_json.LCA_Database(lca_filename)
         taxfoo, hashval_to_lca, _ = lca_db.get_database(args.ksize, SCALED)
         lca_db_list.append((taxfoo, hashval_to_lca))
     
-    print('loading all signatures:', args.dir)
+    print('loading all signatures in directory:', args.dir)
     sigdict = load_all_signatures(args.dir, args.ksize)
     print('...loaded {} signatures at k={}'.format(len(sigdict), args.ksize))
 
     ###
 
+    # track number of disagreements at various rank levels
     disagree_at = collections.defaultdict(int)
 
-    n = 0
+    # for each minhash signature in the directory,
+    n_in_lca = 0
     for name, sig in sigdict.items():
+
+        # for each k-mer in each minhash signature, collect assigned taxids
+        # across all databases (& count).
         taxid_set = collections.defaultdict(int)
+        
         for hashval in sig.minhash.get_mins():
 
+            # if a k-mer is present in multiple DBs, pull the
+            # least-common-ancestor taxonomic node across all of the
+            # DBs.
+            
             this_hashval_taxids = set()
             for (_, hashval_to_lca) in lca_db_list:
                 hashval_lca = hashval_to_lca.get(hashval)
-                if hashval_lca is not None:
+                if hashval_lca is not None and hashval_lca != 1:
                     this_hashval_taxids.add(hashval_lca)
 
             this_hashval_lca = taxfoo.find_lca(this_hashval_taxids)
             taxid_set[this_hashval_lca] += 1
 
-        abundant_taxids = [k for k in taxid_set if taxid_set[k] >= THRESHOLD]
+        # filter on given threshold - only taxids that show up in this
+        # signature more than THRESHOLD.
+        abundant_taxids = set([k for (k, cnt) in taxid_set.items() \
+                               if cnt >= args.threshold])
 
-        if not abundant_taxids:
-            continue
+        # remove root (taxid == 1) if it's in there:
+        if 1 in abundant_taxids:
+            abundant_taxids.remove(1)
 
-        n += 1
+        # ok - out of the loop, got our LCAs, ...are there any left?
+        if abundant_taxids:
+            # increment number that are classifiable at *some* rank.
+            n_in_lca += 1
 
-        ranks_found = collections.defaultdict(set)
-        for taxid in abundant_taxids:
-            d = taxfoo.get_lineage_as_dict(taxid)
-            for k, v in d.items():
-                ranks_found[k].add(v)
+            disagree_rank, disagree_taxids = \
+              taxfoo.get_lineage_first_disagreement(abundant_taxids,
+                                                    want_taxonomy)
 
-        found_disagree = False
-        for rank in reversed(want_taxonomy):
-            if len(ranks_found[rank]) > 1:
-                disagree_at[rank] += 1
-                found_disagree = True
-                break
+            # we found a disagreement - report the rank *at* the disagreement,
+            # the lineage *above* the disagreement.
+            if disagree_rank:
+                # global record of disagreements
+                disagree_at[disagree_rank] += 1
 
-        lineage_found = ""
-        if found_disagree:
-            print('{} has multiple LCA at rank \'{}\': {}'.format(name,
-                                                                  rank,
-                                                                  ", ".join(ranks_found[rank])))
-            status = 'disagree'
-            status_rank = rank
-        else:
-            x = [list(ranks_found[k])[0] for k in want_taxonomy if ranks_found[k]]
-            if not x:
-                status = 'nomatch'
-                status_rank = ''
-                #print('{} has no taxonomy matches in genbank'.format(name))
+                list_at_rank = [taxfoo.get_taxid_name(r) for r in disagree_taxids]
+                list_at_rank = ", ".join(list_at_rank)
+
+                print('{} has multiple LCA at {}: \'{}\''.format(name,
+                                                                 disagree_rank,
+                                                                 list_at_rank))
+
+                # set output
+                status = 'disagree'
+                status_rank = disagree_rank
+                taxid = taxfoo.find_lca(abundant_taxids)
             else:
+                # found unambiguous! yay.
                 status = 'found'
-                lineage_found = ';'.join(x)
-                print('{} taxonomy: {}'.format(name, lineage_found))
 
-                for rrr in reversed(want_taxonomy):
-                    if ranks_found[rrr]:
-                        break
-                status_rank = rrr
+                taxid = taxfoo.get_lowest_lineage(abundant_taxids,
+                                                  want_taxonomy)
+                status_rank = taxfoo.get_taxid_rank(taxid)
+                status = 'found'
+        else:
+            # nothing found. boo.
+            status = 'nomatch'
+            status_rank = ''
+            taxid = 0
 
-        taxid = 0
+        if taxid != 0:
+            lineage_found = taxfoo.get_lineage(taxid,
+                                               want_taxonomy=want_taxonomy)
+            lineage_found = ";".join(lineage_found)
+        else:
+            lineage_found = ""
+        
         outfp.write('{},{},{},{},{}\n'.format(name, taxid, status, status_rank, lineage_found))
 
-    print('for', args.dir, 'found', len(sigdict), 'signatures;')
-    print('out of {} that could be classified, {} disagree at some rank.'.format(n, sum(disagree_at.values())))
+    print('')
+    print('classified sourmash signatures in directory: \'{}\''.format(args.dir))
+    print('LCA databases used: {}'.format(', '.join(LCA_DBs)))
+    print('')
+              
+    print('total signatures found: {}'.format(len(sigdict)))
+    print('no classification information: {}'.format(len(sigdict) - n_in_lca))
+    print('')
+    print('could classify {}'.format(n_in_lca))
+    print('of those, {} disagree at some rank.'.format(sum(disagree_at.values())))
 
+    print('disagreements by rank:')
     for rank in want_taxonomy:
         if disagree_at.get(rank):
             print('\t{}: {}'.format(rank, disagree_at.get(rank, 0)))
+
+    print('')
+    print('classification output as CSV, here: {}'.format(output_filename))
 
 
 if __name__ == '__main__':
