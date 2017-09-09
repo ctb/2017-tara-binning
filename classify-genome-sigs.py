@@ -2,8 +2,6 @@
 """
 Classify a directory of sourmash signatures for individual genomes by
 taxonomic rank, using a kraken-style least-common-ancestor analysis.
-
-TODO: allow other LCA DBs. output in metacoder form.
 """
 import os
 import argparse
