@@ -79,6 +79,7 @@ def load_all_signatures(dirname, ksize):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('-k', '--ksize', default=31, type=int)
+    p.add_argument('--lca', nargs='+', default=LCA_DBs)
     p.add_argument('dir')
     p.add_argument('-o', '--output-csv')
     p.add_argument('--threshold', type=int, default=THRESHOLD,
@@ -97,7 +98,7 @@ def main():
 
     # load the LCA databases from the JSON file(s)
     lca_db_list = []
-    for lca_filename in LCA_DBs:
+    for lca_filename in args.lca:
         print('loading LCA database from {}'.format(lca_filename))
         lca_db = lca_json.LCA_Database(lca_filename)
         taxfoo, hashval_to_lca, _ = lca_db.get_database(args.ksize, SCALED)
@@ -108,6 +109,9 @@ def main():
     print('...loaded {} signatures at k={}'.format(len(sigdict), args.ksize))
 
     ###
+
+    # track number of classifications at various rank levels
+    classified_at = collections.defaultdict(int)
 
     # track number of disagreements at various rank levels
     disagree_at = collections.defaultdict(int)
@@ -132,8 +136,10 @@ def main():
                 if hashval_lca is not None and hashval_lca != 1:
                     this_hashval_taxids.add(hashval_lca)
 
-            this_hashval_lca = taxfoo.find_lca(this_hashval_taxids)
-            taxid_set[this_hashval_lca] += 1
+            if this_hashval_taxids:
+                this_hashval_lca = taxfoo.find_lca(this_hashval_taxids)
+                if this_hashval_lca != None:
+                    taxid_set[this_hashval_lca] += 1
 
         # filter on given threshold - only taxids that show up in this
         # signature more than THRESHOLD.
@@ -144,14 +150,24 @@ def main():
         if 1 in abundant_taxids:
             abundant_taxids.remove(1)
 
+        # default to nothing found. boo.
+        status = 'nomatch'
+        status_rank = ''
+        taxid = 0
+
         # ok - out of the loop, got our LCAs, ...are there any left?
         if abundant_taxids:
             # increment number that are classifiable at *some* rank.
             n_in_lca += 1
 
-            disagree_rank, disagree_taxids = \
-              taxfoo.get_lineage_first_disagreement(abundant_taxids,
-                                                    want_taxonomy)
+            try:
+                disagree_rank, disagree_taxids = \
+                  taxfoo.get_lineage_first_disagreement(abundant_taxids,
+                                                        want_taxonomy)
+            except ValueError:
+                # @CTB this is probably bad.
+                continue
+
 
             # we found a disagreement - report the rank *at* the disagreement,
             # the lineage *above* the disagreement.
@@ -178,11 +194,7 @@ def main():
                                                   want_taxonomy)
                 status_rank = taxfoo.get_taxid_rank(taxid)
                 status = 'found'
-        else:
-            # nothing found. boo.
-            status = 'nomatch'
-            status_rank = ''
-            taxid = 0
+                classified_at[status_rank] += 1
 
         if taxid != 0:
             lineage_found = taxfoo.get_lineage(taxid,
@@ -204,6 +216,13 @@ def main():
     print('could classify {}'.format(n_in_lca))
     print('of those, {} disagree at some rank.'.format(sum(disagree_at.values())))
 
+    print('')
+    print('number classified unambiguously, by lowest classification rank:')
+    for rank in want_taxonomy:
+        if classified_at.get(rank):
+            print('\t{}: {}'.format(rank, classified_at.get(rank, 0)))
+
+    print('')
     print('disagreements by rank:')
     for rank in want_taxonomy:
         if disagree_at.get(rank):

@@ -1,20 +1,15 @@
-library('metacoder')
-library('dplyr')
 
-# load the output of 'classify-genome-sigs.py'
-csvdata = read.csv('delmont-genome-sigs.taxonomy.csv', header=TRUE)
+args <- commandArgs(TRUE)
 
-# eliminate empty lineages
-csvdata <- filter(csvdata, lineage != "")
+source('load_classify_csv.R')
 
-# createa mashup of name and lineage to satify extract_taxonomy
-csvnames <- paste(csvdata$name, csvdata$lineage, sep='\t')
+# load the specified csv file
+taxdata <- load_classify_csv(args[1])
 
-# heck if I know why I have to do this :), but set list names to list values
-names(csvnames) <- csvnames
+# open a PDF file -> output graph
+pdf(args[2], onefile=FALSE)
 
-taxdata <- extract_taxonomy(csvnames, regex = "^(.*)\\\t(.*)",
-                         key = c(id = "obs_info", "class"), class_sep=';')
-
-taxon_data(taxdata)
+# plot a heat tree
 heat_tree(taxdata, node_size = n_obs, node_label = name, node_color = n_obs)
+dev.off()
+
