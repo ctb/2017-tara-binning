@@ -176,7 +176,7 @@ def main():
                 list_at_rank = [taxfoo.get_taxid_name(r) for r in disagree_taxids]
                 list_at_rank = ", ".join(list_at_rank)
 
-                print('{} has multiple LCA at {}: \'{}\''.format(name,
+                print('{} has multiple LCA below {}: \'{}\''.format(name,
                                                                  disagree_rank,
                                                                  list_at_rank))
 
@@ -205,7 +205,7 @@ def main():
 
     print('')
     print('classified sourmash signatures in directory: \'{}\''.format(args.dir))
-    print('LCA databases used: {}'.format(', '.join(LCA_DBs)))
+    print('LCA databases used: {}'.format(', '.join(args.lca)))
     print('')
               
     print('total signatures found: {}'.format(len(sigdict)))
