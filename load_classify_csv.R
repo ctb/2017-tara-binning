@@ -8,7 +8,7 @@ load_classify_csv <- function(filename) {
   # eliminate empty lineages
   csvdata <- filter(csvdata, lineage != "")
 
-  # createa mashup of name and lineage to satify extract_taxonomy
+  # create a mashup of name and lineage to satisfy extract_taxonomy
   csvnames <- paste(csvdata$name, csvdata$lineage, sep='\t')
 
   # heck if I know why I have to do this :), but set list names to list values
