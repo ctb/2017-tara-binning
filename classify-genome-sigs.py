@@ -201,7 +201,7 @@ def main():
         else:
             lineage_found = ""
         
-        outfp.write('{},{},{},{},{}\n'.format(name, taxid, status, status_rank, lineage_found))
+        outw.writerow([name, taxid, status, status_rank, lineage_found])
 
     print('')
     print('classified sourmash signatures in directory: \'{}\''.format(args.dir))
