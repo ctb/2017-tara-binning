@@ -29,7 +29,7 @@ def main():
     p.add_argument('--threshold', type=int, default=THRESHOLD,
                    help="minimum number of times a taxid must be present to count")
     p.add_argument('-X', '--output-unassigned', action='store_true')
-   
+
     args = p.parse_args()
 
     if args.output_csv:
@@ -133,7 +133,7 @@ def main():
                          if cnt < args.threshold ])
     print('n rare taxids not used: {}'.format(n_rare_taxids))
     print('unclassified: {}'.format(len(unassigned)))
-              
+
     print('')
     print('number classified unambiguously, by lowest classification rank:')
     for rank in want_taxonomy:
