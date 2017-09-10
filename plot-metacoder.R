@@ -1,4 +1,4 @@
-
+#! /usr/bin/env Rscript
 args <- commandArgs(TRUE)
 
 source('load_classify_csv.R')
