@@ -159,31 +159,32 @@ def main():
             n_in_lca += 1
 
             try:
-                disagree_rank, disagree_taxids = \
+                disagree_below_rank, taxid_at_rank, disagree_taxids = \
                   taxfoo.get_lineage_first_disagreement(abundant_taxids,
                                                         want_taxonomy)
             except ValueError:
                 # @CTB this is probably bad.
+                assert 0
                 continue
 
 
             # we found a disagreement - report the rank *at* the disagreement,
             # the lineage *above* the disagreement.
-            if disagree_rank:
+            if disagree_below_rank:
                 # global record of disagreements
-                disagree_at[disagree_rank] += 1
+                disagree_at[disagree_below_rank] += 1
 
                 list_at_rank = [taxfoo.get_taxid_name(r) for r in disagree_taxids]
                 list_at_rank = ", ".join(list_at_rank)
 
                 print('{} has multiple LCA below {}: \'{}\''.format(name,
-                                                                 disagree_rank,
-                                                                 list_at_rank))
+                                                          disagree_below_rank,
+                                                          list_at_rank))
 
                 # set output
                 status = 'disagree'
-                status_rank = disagree_rank
-                taxid = taxfoo.find_lca(abundant_taxids)
+                status_rank = disagree_below_rank
+                taxid = taxid_at_rank
             else:
                 # found unambiguous! yay.
                 status = 'found'
