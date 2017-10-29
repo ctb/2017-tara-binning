@@ -60,7 +60,7 @@ def load_all_signatures(dirname, ksize):
         if filename not in filename_d:
             loaded_new = True
             sig = sourmash_lib.signature.load_one_signature(filename,
-                                                            select_ksize=ksize)
+                                                            ksize=ksize)
             filename_d[filename] = 1
             sigd[sig.name()] = sig
 

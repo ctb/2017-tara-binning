@@ -47,7 +47,7 @@ def main():
 
     # load signature
     sig = sourmash_lib.signature.load_one_signature(args.sig,
-                                                    select_ksize=args.ksize)
+                                                    ksize=args.ksize)
     hashes = sig.minhash.get_mins()
 
     # open output file.

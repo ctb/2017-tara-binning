@@ -8,3 +8,6 @@ Code for the following blog posts:
 
 [Classifying genome bins using a custom reference database, part I](http://ivory.idyll.org/blog/2017-classify-genome-bins-with-custom-db-part-1.html)
 
+## TODO
+
+re-run the blogs to make sure the commands still all work :)
